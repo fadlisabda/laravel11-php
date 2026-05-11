@@ -1,0 +1,4 @@
+folder public=menyimpan semua file2 yang bisa diakses oleh user
+folder app=menyimpan folder dan file2 utama dari aplikasi mvc
+folder core=membuat file untuk mengelola routing
+file init.php=memanggil semua aplikasi mvc

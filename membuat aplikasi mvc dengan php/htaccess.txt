@@ -1,0 +1,10 @@
+Options -Indexes=kalau tidak ada file index tidak bisa mengakses folder app
+Options -Multiviews=untuk menghindari kesalahan ketika memanggil folder atau file didalam public 
+
+RewriteEngine On=menulis ulang url yang ada di browser
+-----------------------------------------------------------------------------------------------
+untuk menghindari ketika ada nama folder atau nama file yang sama dengan controller dan method  
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+-----------------------------------------------------------------------------------------------
+RewriteRule ^(.*)$ index.php?url=$1 [L]=aturan menulis ulang urlnya biar gak dihack,apapun yang ditulis setelah public/ akan dimasukkan ke urlnya kecuali enter
